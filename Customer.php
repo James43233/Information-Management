@@ -119,21 +119,21 @@ $conn->close();
           <a href="Index.html">Urban Mis<span class="text-rose-400">Fits</span></a>
       </div>
       <div class="flex justify-start items-center flex-1 h-full font-sigmar gap-[70px] text-rose-400">
-          <a href="index.html">Point of Sales</a>
-          <a href="Sales.html">Sales</a>
-          <a href="Inventory.php">Inventory</a>
-          <a href="Dashboard.php">Dashboard</a>
-          <a href="Delivery.html">Delivery</a>
-          <a href="Product.html">Product</a>
-          <div class="relative group">
-              <a href="#" class="font-sigmar mb-2 text-lg cursor-pointer">More </a>
-              <div class="absolute hidden bg-white shadow-lg rounded-lg group-hover:block">
-                  <a href="Customer.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Customers</a>
-                  <a href="Supplier.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Supplier</a>
-                  
-              </div>
-          </div>
-      </div>
+            <a href="sales.php">Point of Sales</a>
+            <a href="add_sales.php">Sales</a> 
+            <a href="Delivery.php">Delivery</a>
+            <a href="Receive_status.php">Delivery Status</a>
+            <a href="Inventory.php">Inventory </a>
+            <a href="Dashboard.php">Dashboard</a>
+            <div class="relative group">
+                <a href="#" class="font-sigmar mb-2 text-lg cursor-pointer">More </a>
+                <div class="absolute hidden bg-white shadow-lg rounded-lg group-hover:block">
+                    <a href="Product.php" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Product</a>
+                    <a href="Customer.php" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Customers</a>
+                    <a href="Supply.php" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Supplier</a>
+                </div>
+            </div>  
+        </div>
       <div class="flex justify-center items-center mr-[50px]">
           <div class="relative group">
               <img src="icons/Profile.jpg" alt="Profile" class="w-12 h-12 rounded-full cursor-pointer border border-gray-300 shadow-md">
@@ -146,11 +146,11 @@ $conn->close();
   </div>
 
   <!-- Main Content -->
-  <div class="w-[1200px] bg-whiteshell mx-auto min-h-screen">
+  <div class="w-[1400px] bg-whiteshell mx-auto min-h-screen">
       <div class="flex flex-row">
 
           <!-- Left Column: Add Customer Form -->
-          <div class="w-[370px] min-h-screen border-r border-black p-4">
+          <div class="w-[320px] min-h-screen border-r border-black p-4">
               <div class="pt-[50px] pb-[70px] text-center">
                   <span class="text-xl">Add Customer</span>
               </div>
@@ -289,10 +289,10 @@ $conn->close();
           </div>
 
           <!-- Right Column: Customer List -->
-          <div class="w-full border-l border-black p-4">
-            <div class="bg-white p-8 rounded shadow-md max-w-4xl w-full">
+          <div class="w-[900px] border-l border-black p-4">
+            <div class="mt-[20px]">
                 <h1 class="text-2xl font-bold mb-4">Customers</h1>
-                <table class="min-w-full bg-white">
+                <table class="w-[1040px] bg-white">
                     <thead>
                         <tr>
                             <th class="py-2 px-4 border-b">Customer ID</th>
@@ -303,7 +303,7 @@ $conn->close();
                             <th class="py-2 px-4 border-b">Municipality Name</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="cursor-pointer font-rubik">
                         <?php if (!empty($customers)): ?>
                             <?php foreach ($customers as $customer): ?>
                                 <tr data-customer='<?php echo htmlspecialchars(json_encode($customer)); ?>'>

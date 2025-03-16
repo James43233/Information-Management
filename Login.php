@@ -70,7 +70,7 @@ $conn->close();
         ?>
     </div>
 
-    <div class="w-[700px] h-[700px] bg-yellow-400 shadow-lg rounded-lg flex justify-center">
+    <div class="w-[700px] h-[700px] bg-whiteshell shadow-lg rounded-lg flex justify-center">
         <div class="flex flex-col mt-[70px]">
             <div class="flex items-center font-sigmar text-2xl text-green-900 w-[460px] justify-center mt-[50px]">
                 <a href="#">Urban Mis<span class="text-rose-400">Fits</span></a>

@@ -68,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body class="h-screen m-0 flex items-center justify-center bg-gradient-to-r from-pink-400 via-purple-200 to-indigo-400 ">
 
-    <div class="bg-yellow-400 p-8 rounded-lg shadow-lg w-[500px]">
+    <div class="bg-whiteshell p-8 rounded-lg shadow-lg w-[500px]">
         <h2 class="text-2xl font-bold mb-4 text-center font-sigmar">Add Supply</h2>
         
         <form action="add_Supply.php" method="POST" class="space-y-4">

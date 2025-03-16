@@ -105,16 +105,16 @@ if (!$sales) {
         <div class="flex justify-start items-center flex-1 h-full font-sigmar gap-[70px] text-rose-400">
             <a href="sales.php">Point of Sales</a>
             <a href="add_sales.php">Sales</a> 
+            <a href="Delivery.php">Delivery</a>
+            <a href="Receive_status.php">Delivery Status</a>
             <a href="Inventory.php">Inventory </a>
             <a href="Dashboard.php">Dashboard</a>
-            <a href="Delivery.php">Delivery</a>
-            <a href="Product.php">Product</a>
             <div class="relative group">
                 <a href="#" class="font-sigmar mb-2 text-lg cursor-pointer">More </a>
                 <div class="absolute hidden bg-white shadow-lg rounded-lg group-hover:block">
+                    <a href="Product.php" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Product</a>
                     <a href="Customer.php" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Customers</a>
                     <a href="Supply.php" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Supplier</a>
-                    
                 </div>
             </div>  
         </div>
@@ -129,7 +129,7 @@ if (!$sales) {
         </div>
     </div>
 
-    <div class="w-[1200px] mx-auto bg-whiteshell min-h-screen flex justify-evenly">
+    <div class="w-[1400px] mx-auto bg-whiteshell min-h-screen flex justify-evenly">
         <div class="flex flex-row w-full">
             <div class="flex flex-col w-[350px] h-screen  border-r-2 border-black ">
                 <form method="POST" action="">
@@ -191,7 +191,7 @@ if (!$sales) {
                                    type="date" name="date" value="<?php echo date('Y-m-d'); ?>">
                         </div>
                         <div class="flex flex-col items-start mt-[20px]">
-                            <button type="submit" name="update_sale" class="w-full bg-green-700 text-white py-2 rounded">Update</button>
+                            <button type="submit" name="update_sale" class="w-full bg-green-700 text-white py-2 border border-gray-300">Update</button>
                         </div>
                     </div>
                 </form>
